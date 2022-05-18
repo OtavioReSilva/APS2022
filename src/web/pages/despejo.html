@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Despejo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/cadastro.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+  </head>
+  <body>
+    <main id="chat" class="main__container">
+      <div class="sidebar">
+        <div class="sidebar__logo">
+          <img class="logo__image" src="../../assets/logo.png" />
+        </div>
+        <div class="sidebar__menu">
+          <button class="menu__item" type="button" onclick="irParaAnalytics()">
+            Analytics
+          </button>
+          <button class="menu__item" type="button" onclick="irParaChat()">
+            Chat
+          </button>
+          <button class="menu__item" type="button" onclick="irParaUsuarios()">
+            Usuários
+          </button>
+            <button class="menu__item menu--atual" type="button">Despejo</button>
+        </div>
+      </div>
+      <div class="cadastro__container">
+        <header class="cadastro__header">
+          <h1>DESPEJO</h1>
+          <div class="header__perfil">
+            <p class="perfil__icone">M</p>
+            <p class="perfil__nome">Mayara Souza</p>
+          </div>
+        </header>
+        <form> 
+          <!--<select name="search" id="empresa" placeholder="Empresa" required> 
+            <option></option>
+          </select>
+          -->
+          <input type="text" name="search" id="empresa" placeholder="Empresa" required>
+          <input type="text" name="search" id="cnpj" placeholder="CNPJ" required>
+          <input type="text" name="search" id="tipo" placeholder="Tipo de Resíduo" required>
+          <input type="text" name="search" id="quantidade" placeholder="Quantidade do Resíduo" required>
+          <input type="text" name="search" id="regiao" placeholder="Região" required>
+          <button type="button" class="login__form__btn" onclick="cadastrar()">CADASTRAR</button>
+        </form>
+      </div>
+    </main>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../scripts/despejo.js"></script>
+  </body>
+</html>
